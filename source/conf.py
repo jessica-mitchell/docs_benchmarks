@@ -30,7 +30,7 @@ pygments_style = "manni"
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
 html_theme = "sphinx_material"
-html_title = "NEST Benchmark Documentation"
+html_title = "NEST Performance Benchmarks"
 html_logo = "_static/img/nest_logo.png"
 
 html_theme_options = {
