@@ -1,15 +1,28 @@
-.. benchmark-docs documentation master file, created by
-   sphinx-quickstart on Wed Oct  8 12:44:50 2025.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+NEST Performance Benchmarks
+===========================
 
-Benchmark Documentation
-============================
+Here we provide performance benchmarks for recent versions of NEST
 
+
+* :ref:`NEST 3.9 results <nest_benchmark_results>`
+* :ref:`NEST 3.8 results <previous_nest_benchmark_results>`
+
+----
+
+.. seealso::
+
+   * Guide to :ref:`Built-in timers <nest:built_in_timers>` and :ref:`Simulation behavior <nest:run_simulations>`.
+
+   Example networks:
+
+   * :doc:`Microcircuit Model <pd14:index>`
+   * `Multi-area model <https://inm-6.github.io/multi-area-model/>`_
+   * :doc:`HPC benchmark <nest:auto_examples/hpc_benchmark>`
 
 .. toctree::
    :maxdepth: 2
+   :hidden:
 
-   Current benchmark results <benchmark_results>
-   previous_benchmark_results
-   Back to documentation <https://nest-simulator.org/documentation>
+   NEST 3.9 benchmark results <benchmark_results>
+   NEST 3.8 benchmark results <previous_benchmark_results>
+   Back to NEST documentation <https://nest-simulator.org/documentation>

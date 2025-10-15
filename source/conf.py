@@ -6,10 +6,10 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'benchmark-docs'
+project = 'nest-benchmark-results'
 copyright = '2025, J Mitchell'
-author = 'J Mitchell'
-release = '1'
+author = 'NEST developers'
+release = '1.0'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
