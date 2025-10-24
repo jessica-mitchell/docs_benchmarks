@@ -53,9 +53,9 @@ a new entry needs to be created in this repository and the index page needs to b
 
 ### File Naming Convention
 
-- Benchmark results pages: `nest<version>_benchmark_results.rst`
+- Benchmark results pages: `<version>_benchmark_results.rst`
 - Benchmark images: `<benchmark_type>_benchmark_NEST-v<version>.png`
-- Example: `nest3.10_benchmark_results.rst` with images like `mc_benchmark_NEST-v3.10.png`
+- Example: `v3.10_benchmark_results.rst` with images like `mc_benchmark_NEST-v3.10.png`
 
 ### Version Management
 
@@ -69,7 +69,7 @@ prominently featured.
 source/
 ├── index.rst                           # Main index page
 ├── benchmark_results.rst              # Latest benchmark results
-├── nest<version>_benchmark_results.rst # Version-specific results
+├── <version>_benchmark_results.rst   # Version-specific results
 ├── _static/img/                       # Benchmark images
 └── conf.py                           # Sphinx configuration
 ```
