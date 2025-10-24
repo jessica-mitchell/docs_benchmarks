@@ -1,14 +1,30 @@
 # NEST Performance Benchmarks
 
-This repository contains performance benchmark results for the NEST Simulator across different versions. The benchmarks demonstrate NEST's scalability and performance characteristics on high-performance computing systems.
+This repository contains performance benchmark results for the NEST Simulator across different versions. The benchmarks
+demonstrate NEST's scalability and performance characteristics on high-performance computing systems.
+
+## Why do we have a separate repo for benchmark results?
+
+The benchmark results are maintained in a separate repository for several architectural and practical reasons:
+
+- **Independent release cycles**: Benchmark results can be updated and corrected without requiring NEST Simulator releases
+- **Clean separation of concerns**: Keeps the main NEST repository focused on source code rather than generated artifacts
+- **beNNch workflow flexibility**: When beNNch workflow improvements or bug fixes are made, we can re-run benchmarks for any NEST version without touching the NEST codebase
+- **Repository size management**: Avoids bloating the main repository with large binary assets (benchmark images and data files)
+- **Specialized tooling**: Allows for documentation-specific configurations and workflows optimized for presenting benchmark results
 
 ## Documentation
+
+This repo has its own dedicated Read the Docs page and is cross-linked to the main NEST Simulator documentation.
+
 
 📖 **Read the Docs**: [Link to be added when documentation is published]
 
 ## About the Benchmarks
 
-The performance benchmarks in this repository are generated using the **BeNNch workflow** (Benchmarking Neural Network Simulations). This standardized benchmarking framework allows for consistent performance evaluation across different NEST versions and computing environments.
+The performance benchmarks in this repository are generated using the **BeNNch workflow**.
+This standardized benchmarking framework allows for consistent performance evaluation across different
+NEST versions and computing environments.
 
 ### Benchmark Types
 
@@ -21,11 +37,11 @@ The repository includes three main types of performance benchmarks:
 Each benchmark includes performance visualizations showing:
 - Simulation time vs. number of compute resources
 - Strong scaling and weak scaling characteristics
-- Error bars indicating standard deviation across multiple runs
 
 ## Adding New Benchmark Results
 
-When NEST is preparing for a new release, we need to run the benchmarks from the NEST release candidate. Once completed, a new entry needs to be created in this repository and the index page needs to be updated.
+When NEST is preparing for a new release, we need to run the benchmarks from the NEST release candidate. Once completed,
+a new entry needs to be created in this repository and the index page needs to be updated.
 
 ### Process for Adding New Results
 
@@ -43,7 +59,9 @@ When NEST is preparing for a new release, we need to run the benchmarks from the
 
 ### Version Management
 
-We maintain all benchmark versions to provide a historical record of NEST's performance evolution. Each version gets its own dedicated page, ensuring that previous results remain accessible while new results are prominently featured.
+We maintain all benchmark versions (starting with v3.8) to provide a historical record of NEST's performance evolution.
+Each version gets its own dedicated page, ensuring that previous results remain accessible while new results are
+prominently featured.
 
 ## Repository Structure
 
@@ -65,7 +83,7 @@ The documentation is built using Sphinx with the Material theme. To build locall
 pip install -r requirements.txt
 
 # Build the documentation
-make html
+sphinx-build source/ build/
 ```
 
 The built documentation will be available in the `build/html/` directory.
