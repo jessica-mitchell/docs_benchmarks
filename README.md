@@ -5,12 +5,12 @@ demonstrate NEST's scalability and performance characteristics on high-performan
 
 ## Why do we have a separate repo for benchmark results?
 
-The benchmark results are maintained in a separate repository for several architectural and practical reasons:
+The benchmark results are maintained in a separate repository for several practical reasons:
 
-- **Independent release cycles**: Benchmark results can be updated and corrected without requiring NEST Simulator releases
+- **Independent release cycles**: Benchmark results can be updated and corrected without affecting NEST Simulator releases
 - **Clean separation of concerns**: Keeps the main NEST repository focused on source code rather than generated artifacts
 - **beNNch workflow flexibility**: When beNNch workflow improvements or bug fixes are made, we can re-run benchmarks for any NEST version without touching the NEST codebase
-- **Repository size management**: Avoids bloating the main repository with large binary assets (benchmark images and data files)
+- **Repository size management**: Avoids bloating the main repository with large binary assets (benchmark images)
 - **Specialized tooling**: Allows for documentation-specific configurations and workflows optimized for presenting benchmark results
 
 ## Documentation
